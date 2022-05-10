@@ -15,6 +15,9 @@ import Footer from '../src/components/Footer'
 const Home: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Vetta - Brands in a moment</title>
+      </Head>
       <Navbar />
       <Hero />
       <HowUse />
