@@ -6,12 +6,12 @@ export const AppDoenload = () => {
   return (
     <div className="bg-blue-500 pt-24  text-center font-monster text-white sm:text-left">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 gap-20 sm:grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-20">
           <div className="flex flex-col justify-center">
-            <h1 className="mb-3 font-monster text-7xl font-bold text-black">
+            <h1 className="mb-3 p-2 font-monster text-2xl font-bold text-black md:text-6xl">
               Download the app today
             </h1>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 px-3">
               <Image
                 src="/images/letsdo/appStoreBadge.svg"
                 width={200}
