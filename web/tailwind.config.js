@@ -2,12 +2,12 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/container/**/*.{js,ts,jsx,tsx}',
+    './src/container/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     extend: {
       fontFamily: {
-        monster: ['Montserrat'],
+        monster: ['Montserrat']
       },
       colors: {
         ovou: '##ff653a',
@@ -22,12 +22,12 @@ module.exports = {
         cwhite: '#F6FCFA',
         softWhite: '#DAE6E2',
         cblack: '#171717',
-        matteBlack: '#383D3F',
-      },
+        matteBlack: '#383D3F'
+      }
     },
     minHeight: {
-      '2/3': '70%',
-    },
+      '2/3': '70%'
+    }
   },
   plugins: [
     require('tailwind-scrollbar-hide'),
@@ -36,19 +36,19 @@ module.exports = {
         '.container': {
           maxWidth: '100%',
           '@screen sm': {
-            maxWidth: '540px',
+            maxWidth: '540px'
           },
           '@screen md': {
-            maxWidth: '720px',
+            maxWidth: '720px'
           },
           '@screen lg': {
-            maxWidth: '960px',
+            maxWidth: '960px'
           },
           '@screen xl': {
-            maxWidth: '1140px',
-          },
-        },
+            maxWidth: '1140px'
+          }
+        }
       })
-    },
-  ],
+    }
+  ]
 }
