@@ -6,19 +6,20 @@ export const AppDoenload = () => {
   return (
     <div className="bg-blue-500 pt-24  text-center font-monster text-white sm:text-left">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-20 sm:grid-cols-2">
           <div className="flex flex-col justify-center">
-            <h1>Download the app today</h1>
-            <div className="grid grid-cols-2 space-x-20 px-4">
+            <h1 className="mb-3 font-monster text-7xl font-bold text-black">
+              Download the app today
+            </h1>
+            <div className="grid grid-cols-2 gap-4">
               <Image
-                style={{ marginRight: '10px' }}
                 src="/images/letsdo/appStoreBadge.svg"
-                width={80}
+                width={200}
                 height={100}
               />
               <Image
                 src="/images/letsdo/googlePlayBadge.svg"
-                width={80}
+                width={200}
                 height={100}
               />
             </div>
