@@ -5,6 +5,11 @@ import { Navbar } from './Navbar'
 import { BrandPromises } from './Home/AppPromotionWithPicture'
 import { LetsDoToghther } from './Home/LetsTogether'
 import { AppDoenload } from './AppSection'
+import { PartnershipHero } from './Partnership/PartnerHero'
+import { PartnerBenifits } from './Partnership/PartnerBenifits'
+import PartnerHandShake from './Partnership/PartnerHandShake'
+import Footer from './Footer'
+import NewsLetter from './NewsLetter'
 
 export {
   Navbar,
@@ -14,4 +19,9 @@ export {
   BrandPromises,
   LetsDoToghther,
   AppDoenload,
+  PartnershipHero,
+  PartnerBenifits,
+  PartnerHandShake,
+  Footer,
+  NewsLetter,
 }

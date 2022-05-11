@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export const Navbar = () => {
   return (
-    <section className="container mx-auto py-2  px-4 font-monster lg:px-10">
+    <section className="container mx-auto py-2 px-2 font-monster  sm:px-0">
       <nav className="relative flex items-center justify-between">
         <Link href="/">
           <Link href="/" className="text-xl text-gray-900">
@@ -41,19 +41,24 @@ export const Navbar = () => {
         <div className=" mr-8 hidden lg:block">
           <ul className="flex items-center space-x-8 text-sm font-bold">
             <li>
-              <a className="hover:underline" href="#">
-                Product
-              </a>
+              <Link className="hover:underline" href="/">
+                Home
+              </Link>
             </li>
             <li>
-              <a className="hover:underline" href="#">
-                Story
-              </a>
+              <Link className="hover:underline" href="/partnership">
+                Partnership
+              </Link>
             </li>
             <li>
-              <a className="hover:underline" href="/careers">
-                Careers
-              </a>
+              <Link className="hover:underline" href="/gift_cards">
+                Gift Cards
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:underline" href="/careers">
+                Career
+              </Link>
             </li>
             <li>
               <Link className="hover:underline" href="/contact">
