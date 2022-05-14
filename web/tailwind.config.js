@@ -2,7 +2,7 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/container/**/*.{js,ts,jsx,tsx}',
+    './src/container/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     container: {
@@ -18,12 +18,12 @@ module.exports = {
         md: '728px',
         lg: '984px',
         xl: '1240px',
-        '2xl': '1496px',
-      },
+        '2xl': '1496px'
+      }
     },
     extend: {
       fontFamily: {
-        monster: ['Montserrat'],
+        monster: ['Montserrat']
       },
       colors: {
         ovou: '##ff653a',
@@ -38,12 +38,12 @@ module.exports = {
         cwhite: '#F6FCFA',
         softWhite: '#DAE6E2',
         cblack: '#171717',
-        matteBlack: '#383D3F',
-      },
+        matteBlack: '#383D3F'
+      }
     },
     minHeight: {
-      '2/3': '70%',
-    },
+      '2/3': '70%'
+    }
   },
-  plugins: [require('tailwind-scrollbar-hide')],
+  plugins: [require('tailwind-scrollbar-hide')]
 }
