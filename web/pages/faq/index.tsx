@@ -372,7 +372,7 @@ class Faq extends Component<ContactProps> {
                         </svg>
                       </span>
                     </button>
-                    <p className="mt-3 hidden pr-6 text-sm text-gray-500">
+                    <p className="mt-3 pr-6 text-sm text-gray-500">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Duis nec urna lacus. Pellentesque in lacus eu est suscipit
                       volutpat eu eget diam. Donec eget justo et diam
