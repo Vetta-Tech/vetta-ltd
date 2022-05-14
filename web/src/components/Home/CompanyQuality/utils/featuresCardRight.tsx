@@ -18,7 +18,7 @@ export const FeaturesCardRight = () => {
         <h3 className="py-1 text-xl font-semibold md:py-3 md:text-3xl md:font-bold">
           Your lightning-fast delivery partner.
         </h3>
-        <p className="p-3 text-sm text-gray-800">
+        <p className="p-3 text-sm text-gray-800 md:p-0">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s
