@@ -10,7 +10,11 @@ export const Hero = () => {
     <div className="no-scrollbar">
       <div className="container mx-auto grid grid-cols-1 bg-black  lg:grid-cols-2">
         <div className="z-10 block p-0 lg:hidden">
-          <img src="https://quomodosoft.com/html/lunatic/lunatic/images/home-mobile-3.png" />
+          <Image
+            height={700}
+            width={500}
+            src="https://quomodosoft.com/html/lunatic/lunatic/images/home-mobile-3.png"
+          />
         </div>
         <div className="mx-auto mb-4 flex flex-col justify-center text-white md:p-0 lg:p-4 ">
           <div className="text-center md:text-left">
@@ -30,7 +34,11 @@ export const Hero = () => {
           </div>
         </div>
         <div className="hidden lg:block">
-          <img src="https://quomodosoft.com/html/lunatic/lunatic/images/home-mobile-3.png" />
+          <Image
+            height={600}
+            width={500}
+            src="https://quomodosoft.com/html/lunatic/lunatic/images/home-mobile-3.png"
+          />
         </div>
       </div>
       <Client />

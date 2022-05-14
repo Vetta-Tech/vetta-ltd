@@ -10,6 +10,7 @@ import {
   LetsDoToghther,
   Navbar,
   CompanyQuality,
+  HowSection,
 } from '../src/components'
 import Footer from '../src/components/Footer'
 
@@ -22,9 +23,8 @@ const Home: NextPage = () => {
       <Navbar />
       <Hero />
       <CompanyQuality />
-      <HowUse />
-      <Benifits />
-      <BrandPromises />
+      <HowSection />
+
       <LetsDoToghther />
       <AppDoenload />
       <Footer />

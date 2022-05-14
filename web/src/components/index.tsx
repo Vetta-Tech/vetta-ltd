@@ -11,6 +11,7 @@ import PartnerHandShake from './Partnership/PartnerHandShake'
 import Footer from './Footer'
 import NewsLetter from './NewsLetter'
 import CompanyQuality from './Home/CompanyQuality'
+import { HowSection } from './Home/HowSection'
 
 export {
   Navbar,
@@ -26,4 +27,5 @@ export {
   Footer,
   NewsLetter,
   CompanyQuality,
+  HowSection,
 }

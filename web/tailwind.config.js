@@ -5,6 +5,22 @@ module.exports = {
     './src/container/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    container: {
+      // you can configure the container to be centered
+      center: true,
+
+      // or have default horizontal padding
+      padding: '1rem',
+
+      // default breakpoints but with 40px removed
+      screens: {
+        sm: '600px',
+        md: '728px',
+        lg: '984px',
+        xl: '1240px',
+        '2xl': '1496px',
+      },
+    },
     extend: {
       fontFamily: {
         monster: ['Montserrat'],
@@ -29,26 +45,5 @@ module.exports = {
       '2/3': '70%',
     },
   },
-  plugins: [
-    require('tailwind-scrollbar-hide'),
-    function ({ addComponents }) {
-      addComponents({
-        '.container': {
-          maxWidth: '100%',
-          '@screen sm': {
-            maxWidth: '540px',
-          },
-          '@screen md': {
-            maxWidth: '720px',
-          },
-          '@screen lg': {
-            maxWidth: '960px',
-          },
-          '@screen xl': {
-            maxWidth: '1140px',
-          },
-        },
-      })
-    },
-  ],
+  plugins: [require('tailwind-scrollbar-hide')],
 }
