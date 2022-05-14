@@ -11,6 +11,8 @@ import {
   Navbar,
   CompanyQuality,
   HowSection,
+  Careers,
+  RiderPartner,
 } from '../src/components'
 import Footer from '../src/components/Footer'
 
@@ -24,8 +26,9 @@ const Home: NextPage = () => {
       <Hero />
       <CompanyQuality />
       <HowSection />
-
-      <LetsDoToghther />
+      <Careers />
+      <RiderPartner />
+      {/* <LetsDoToghther /> */}
       <AppDoenload />
       <Footer />
     </>

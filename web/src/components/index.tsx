@@ -12,6 +12,8 @@ import Footer from './Footer'
 import NewsLetter from './NewsLetter'
 import CompanyQuality from './Home/CompanyQuality'
 import { HowSection } from './Home/HowSection'
+import { Careers } from './Home/Careers'
+import { RiderPartner } from './Home/RiderPartner'
 
 export {
   Navbar,
@@ -28,4 +30,6 @@ export {
   NewsLetter,
   CompanyQuality,
   HowSection,
+  Careers,
+  RiderPartner,
 }
