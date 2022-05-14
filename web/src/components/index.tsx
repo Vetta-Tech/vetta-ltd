@@ -10,6 +10,7 @@ import { PartnerBenifits } from './Partnership/PartnerBenifits'
 import PartnerHandShake from './Partnership/PartnerHandShake'
 import Footer from './Footer'
 import NewsLetter from './NewsLetter'
+import CompanyQuality from './Home/CompanyQuality'
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   PartnerHandShake,
   Footer,
   NewsLetter,
+  CompanyQuality,
 }
