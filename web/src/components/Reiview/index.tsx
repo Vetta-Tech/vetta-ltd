@@ -7,7 +7,7 @@ export const Review = () => {
       <h1 className="my-16 text-center text-3xl font-bold scrollbar-hide md:text-5xl">
         Our Happy Customers
       </h1>
-      <div className="flex justify-between overflow-auto p-4">
+      <div className="flex justify-between space-x-4 overflow-auto p-4">
         <ReviewCard
           name="First Name"
           address="Uttara, Dhaka"
