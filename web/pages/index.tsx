@@ -32,6 +32,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Vetta - Brands in a moment</title>
       </Head>
+
       <Navbar />
       <Hero locals={t} />
       <CompanyQuality />
