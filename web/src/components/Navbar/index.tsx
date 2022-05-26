@@ -1,6 +1,20 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import bn from '../../locals/Home/bn'
+import en from '../../locals/Home/en'
+
+import { GlobeAltIcon } from '@heroicons/react/solid'
 
 export const Navbar = () => {
+  const router = useRouter()
+  const { locale } = router
+  const t = locale === 'en' ? en : bn
+
+  const changeLanguage = (e: any) => {
+    const locale = e.target.value
+    router.push(router.pathname, router.asPath, { locale })
+  }
+
   return (
     <section className="container mx-auto py-2 px-2 font-monster  sm:px-0">
       <nav className="relative flex items-center justify-between">
@@ -50,11 +64,7 @@ export const Navbar = () => {
                 Partnership
               </Link>
             </li>
-            <li>
-              <Link className="hover:underline" href="/gift_cards">
-                Gift Cards
-              </Link>
-            </li>
+
             <li>
               <Link className="hover:underline" href="/careers">
                 Career
@@ -67,7 +77,17 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden items-center justify-center space-x-4 lg:flex">
+          <div className="flex items-center justify-center">
+            <GlobeAltIcon width={24} color="red" />
+            <select
+              onChange={changeLanguage}
+              className="hover:active appearance-none rounded-lg bg-gray-50 p-2 outline-none"
+            >
+              <option value="en">English</option>
+              <option value="bn">বাংলা</option>
+            </select>
+          </div>
           <Link
             target="_blank"
             href="https://play.google.com/store/apps/details?id=com.romexbd"

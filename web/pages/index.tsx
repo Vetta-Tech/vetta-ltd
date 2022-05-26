@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import {
   AppDoenload,
   Benifits,
@@ -18,14 +19,21 @@ import {
 } from '../src/components'
 import Footer from '../src/components/Footer'
 
+import en from '../src/locals/Home/en'
+import bn from '../src/locals/Home/bn'
+
 const Home: NextPage = () => {
+  const router = useRouter()
+  const { locale } = router
+  const t = locale === 'en' ? en : bn
+  console.log(t)
   return (
     <>
       <Head>
         <title>Vetta - Brands in a moment</title>
       </Head>
       <Navbar />
-      <Hero />
+      <Hero locals={t} />
       <CompanyQuality />
       {/* <HowSection />
       <Careers />
