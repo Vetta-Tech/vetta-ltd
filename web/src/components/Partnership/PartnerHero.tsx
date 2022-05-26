@@ -6,7 +6,6 @@ import { Button } from '../../container'
 export const PartnershipHero = () => {
   return (
     <div>
-      {' '}
       <div className="container m-auto mt-10 mb-10 px-2">
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2">
           <div className="mb-4 text-center sm:text-left">

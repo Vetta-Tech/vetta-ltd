@@ -14,6 +14,7 @@ import {
   Careers,
   RiderPartner,
   HowItWork,
+  Review,
 } from '../src/components'
 import Footer from '../src/components/Footer'
 
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
       <LetsDoToghther /> */}
       <HowItWork />
       <AppDoenload />
+      <Review />
       <Footer />
     </>
   )

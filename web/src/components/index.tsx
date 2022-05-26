@@ -15,6 +15,7 @@ import { HowSection } from './Home/HowSection'
 import { Careers } from './Home/Careers'
 import { RiderPartner } from './Home/RiderPartner'
 import { HowItWork } from './Home/HowItWorks'
+import { Review } from './Reiview'
 
 export {
   Navbar,
@@ -34,4 +35,5 @@ export {
   Careers,
   RiderPartner,
   HowItWork,
+  Review,
 }
