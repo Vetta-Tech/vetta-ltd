@@ -4,7 +4,7 @@ import { useState } from 'react'
 export const AppDoenload = () => {
   const [android, setAndroid] = useState(true)
   return (
-    <div className="container rounded-3xl bg-black">
+    <div className="container bg-black md:rounded-3xl">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="mx-auto mt-10">
           <Image

@@ -11,7 +11,7 @@ export const FeaturesCardLeft = () => {
           width={450}
         />
       </div>
-      <div className="mx-auto flex flex-col justify-center p-2 text-center font-monster md:w-5/6 md:p-0 md:text-left">
+      <div className="mx-auto flex  flex-col justify-center text-center font-monster md:w-5/6 md:p-0 md:text-left">
         <p className="text-sm text-gray-500 md:text-lg">
           New Meaning for Delivery
         </p>
