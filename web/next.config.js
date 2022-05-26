@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   images: {
-    domains: ['quomodosoft.com'],
+    domains: ['quomodosoft.com']
   },
   reactStrictMode: true,
 
@@ -11,12 +11,12 @@ module.exports = {
     domains: [
       {
         domain: 'vetta.app',
-        defaultLocale: 'en',
+        defaultLocale: 'en'
       },
       {
         domain: 'vetta.app',
-        defaultLocale: 'bn',
-      },
-    ],
-  },
+        defaultLocale: 'bn'
+      }
+    ]
+  }
 }
