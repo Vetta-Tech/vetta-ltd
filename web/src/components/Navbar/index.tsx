@@ -5,6 +5,7 @@ import en from '../../locals/Home/en'
 
 import { GlobeAltIcon } from '@heroicons/react/solid'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export const Navbar = () => {
   const router = useRouter()
@@ -22,38 +23,44 @@ export const Navbar = () => {
     <>
       {sideNav && (
         <div className="fixed z-50  h-full w-72 bg-white">
-          <ul className="mx-auto flex w-full flex-col justify-center font-bold">
-            <li>
-              <Link className="hover:underline" href="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:underline" href="/partnership">
-                Partnership
-              </Link>
-            </li>
+          <div>
+            <div className="flex items-center justify-center">
+              <Image src="/images/logo/lpg-logo.png" width={200} height={50} />
+            </div>
 
-            <li>
-              <Link className="hover:underline" href="/careers">
-                Career
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:underline" href="/contact">
-                Contact
-              </Link>
-            </li>
-          </ul>
-          <div className="flex items-center justify-center">
-            <GlobeAltIcon width={24} color="red" />
-            <select
-              onChange={changeLanguage}
-              className="hover:active appearance-none rounded-lg bg-gray-50 p-2 outline-none"
-            >
-              <option value="en">English</option>
-              <option value="bn">বাংলা</option>
-            </select>
+            <ul className="mx-auto my-16 flex w-full flex-col justify-center p-2 font-bold">
+              <li className="border-b-2  border-gray-100 py-4 px-2">
+                <Link className="hover:underline" href="/">
+                  Home
+                </Link>
+              </li>
+              <li className="border-b-2  border-gray-100 py-4 px-2">
+                <Link className="hover:underline" href="/partnership">
+                  Partnership
+                </Link>
+              </li>
+
+              <li className="border-b-2  border-gray-100 py-4 px-2">
+                <Link className="hover:underline" href="/careers">
+                  Career
+                </Link>
+              </li>
+              <li className="border-b-2  border-gray-100 py-4 px-2">
+                <Link className="hover:underline" href="/contact">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+            <div className="flex items-center justify-center">
+              <GlobeAltIcon width={24} color="red" />
+              <select
+                onChange={changeLanguage}
+                className="hover:active appearance-none rounded-lg bg-gray-50 p-2 outline-none"
+              >
+                <option value="en">English</option>
+                <option value="bn">বাংলা</option>
+              </select>
+            </div>
           </div>
         </div>
       )}
