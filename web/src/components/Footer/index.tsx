@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Footer() {
   return (
     <div>
@@ -11,14 +13,17 @@ export default function Footer() {
           <div className="flex  flex-col items-start justify-start xl:flex-row xl:justify-center xl:space-x-8">
             <div className="flex items-center justify-start space-x-4">
               <div className="w-12 cursor-pointer">
-                <img
-                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_5_marketing_svg1.svg"
-                  alt="logo"
+                <Image
+                  // className="h-7"
+                  src="/images/logo/lpg-logo.png"
+                  alt=""
+                  width={100}
+                  height={50}
                 />
               </div>
-              <p className="w-60 text-xl font-semibold leading-normal text-white xl:text-2xl">
+              {/* <p className="w-60 text-xl font-semibold leading-normal text-white xl:text-2xl">
                 The North
-              </p>
+              </p> */}
             </div>
             <div className="mt-12 grid w-full grid-cols-1 gap-y-12 font-monster text-xs sm:grid-cols-3 sm:gap-y-0 sm:gap-x-20 md:w-auto md:gap-x-28 xl:mt-0 xl:gap-8">
               <div className="flex flex-col items-start justify-start space-y-6 sm:w-40 md:w-auto xl:w-72">

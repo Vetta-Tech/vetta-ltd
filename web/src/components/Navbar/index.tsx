@@ -8,7 +8,7 @@ export const Navbar = () => {
           <Link href="/" className="text-xl text-gray-900">
             <img
               className="h-7"
-              src="/images/logo/lpg-logo.jpg"
+              src="/images/logo/lpg-logo.png"
               alt=""
               width="auto"
             />
@@ -85,7 +85,7 @@ export const Navbar = () => {
             <a className="ml-10 text-2xl font-bold text-white" href="#">
               <img
                 className="h-7"
-                src="/images/logo/lpg-logo.jpg"
+                src="/images/logo/lpg-logo.png"
                 alt=""
                 width="auto"
               />
