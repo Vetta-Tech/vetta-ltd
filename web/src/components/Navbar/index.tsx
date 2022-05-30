@@ -1,5 +1,9 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
+
+import { isIOS, isAndroid } from 'react-device-detect'
+
 import bn from '../../locals/Home/bn'
 import en from '../../locals/Home/en'
 
@@ -51,6 +55,21 @@ export const Navbar = () => {
                 </Link>
               </li>
             </ul>
+            <Link
+              target="_blank"
+              href={
+                isIOS
+                  ? 'https://apps.apple.com/us/app/fastaf-2-hour-delivery/id1522566916'
+                  : 'https://play.google.com/store/apps/details?id=com.romexbd'
+              }
+            >
+              <a
+                target="_blank"
+                className="inline-block cursor-pointer rounded-full border border-black bg-black px-12 py-4 font-bold text-white transition duration-200 hover:bg-white hover:text-black"
+              >
+                Get Vetta
+              </a>
+            </Link>
             <div className="flex items-center justify-center">
               <GlobeAltIcon width={24} color="red" />
               <select
@@ -140,11 +159,19 @@ export const Navbar = () => {
             </div>
             <Link
               target="_blank"
-              href="https://play.google.com/store/apps/details?id=com.romexbd"
+              href={
+                isIOS
+                  ? 'https://apps.apple.com/us/app/fastaf-2-hour-delivery/id1522566916'
+                  : 'https://play.google.com/store/apps/details?id=com.romexbd'
+              }
             >
-              <a className="inline-block cursor-pointer rounded-full border border-black bg-black px-12 py-4 font-bold text-white transition duration-200 hover:bg-white hover:text-black">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="inline-block cursor-pointer rounded-full border border-black bg-black px-10 py-3 font-bold text-white transition duration-200 hover:bg-white hover:text-black"
+              >
                 Get Vetta
-              </a>
+              </motion.button>
             </Link>
           </div>
         </nav>
